@@ -5,7 +5,7 @@ on:
 
 jobs: 
  firstjob:
-  runs-on: docker-demo
+  runs-on: self-hosted
   steps:
   - name: First job
     run: echo The first job!

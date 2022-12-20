@@ -1,0 +1,11 @@
+name: First Workflow
+
+on: 
+ workflow_dispatch
+
+jobs: 
+ firstjob:
+  runs-on: docker-demo
+  steps:
+  - name: First job
+    run: echo The first job!

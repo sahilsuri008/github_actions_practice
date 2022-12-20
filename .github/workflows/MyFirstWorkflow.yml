@@ -9,3 +9,12 @@ jobs:
   steps:
   - name: First job
     run: echo The first job!
+  
+  - name: Checkout
+    uses: actions/checkout@v2.6.0
+    with:
+     repository: ${{ github.repository }}
+
+
+
+

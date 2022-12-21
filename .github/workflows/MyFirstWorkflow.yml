@@ -23,7 +23,7 @@ jobs:
      
   - name: time
     run: |
-     echo "The time of greeting was at: ${{step.greeting.outputs.time}}"
+     echo "The time of greeting was at: ${{steps.greeting.outputs.time}}"
     
 
 

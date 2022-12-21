@@ -15,6 +15,15 @@ jobs:
     with:
      repository: ${{ github.repository }}
 
-
+  - name: Create your own action
+    id: greeting
+    uses: actions/hello-world-javscrpt-action@main
+    with:
+     who-to-greet: "Sahil Suri"
+     
+  - name: time
+    run: |
+     echo "The time of greeting was at: ${{step.greeting.outputs.time}}"
+    
 
 

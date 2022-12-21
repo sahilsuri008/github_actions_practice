@@ -19,3 +19,4 @@ jobs:
       echo $WF_VAR
       echo $JOB_VAR
       echo $STEP_VAR
+      echo ${{ secrets.MY_SEC_PASS }}

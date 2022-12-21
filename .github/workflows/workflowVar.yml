@@ -1,0 +1,17 @@
+name: Testing varaibles
+env: 
+ WF_VAR: "workflow variables"
+ 
+jobs:
+ runs-on: ubuntu-latest
+ someJob:
+ env:
+  JOB_VAR: "job variables"
+ steps:
+ - name: Testing variables
+   env:
+    STEP_VAR: "step variables"
+   run: |
+    echo $WF_VAR
+    echo $JOB_VAR
+    echo $STEP_VAR
